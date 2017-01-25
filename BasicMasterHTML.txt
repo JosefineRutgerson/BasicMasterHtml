@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+	
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Tangerine" rel="stylesheet">
+	<link href="/Content/css/site.css" rel="stylesheet">
+	
+    <titel></titel>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="container"></div>
+            <div class="main-menu" id="main-menu">
+                <div class="container">
+                    <div class="navbar-wrapper">
+                       <div class="navbar">
+                           <ul class="nav l1">
+                               <li><a href="https://our.umbraco.org/documentation/reference/templating/mvc/views" title="Home Page">Home</a></li>
+                               <li><a href="https://our.umbraco.org/documentation/reference/templating/mvc/views" title="Home Page">Products</a></li>
+                               <li><a href="https://our.umbraco.org/documentation/reference/templating/mvc/views" title="Home Page">About</a></li>
+                               <li><a href="https://our.umbraco.org/documentation/reference/templating/mvc/views" title="Home Page">Contact</a></li>
+                           </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu"></div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="left-column">
+                    
+                        <div class="submenu">
+                            <div class="navbar">
+                                <ul class="nav l1">
+                                    <li><a href="#first-h1">Welcome</a></li>
+                                    <li><a href="#second-h2">Trevlig läsning</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="main-content">
+                    <h1 id="first-h1">@Umbraco.Field("primaryHeading")</h1>
+                    <h2 id="second-h2">@Umbraco.Field("secondaryHeading")</h2>
+                    <p>@Umbraco.Field("bodyText")</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">@Umbraco.Field("footerText")</div>
+
+    <script src="/Content/scripts/jquery-1.12.0.min.js"></script>
+    <script src="/Content/scripts/bootstrap.min.js"></script>
+    <script src="/Content/scripts/script.js"></script>
+
+
+</body>
+</html>
